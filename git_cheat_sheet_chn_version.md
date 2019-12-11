@@ -6,9 +6,9 @@
 
 **新建**版本库。目录下会多一个.git文件夹。
 
-`git add filename.extension`
+`git add <file>`
 
-将`filename.extension`文件加入**暂存区**。
+将`<file>`文件加入**暂存区**。
 
 `git commit -m "comment"`
 
@@ -38,5 +38,23 @@
 
 查看每一次记录的命令（查找版本号用）
 
+`git diff HEAD -- <file>`
 
+查看工作区和版本库里面最新版本的区别。
+
+`git checkout --<file>`
+
+把文件在工作区的修改全部撤销。有两种情况：
+
+①修改后还没有提交到暂存区，撤销修改会回到和版本库一样的状态。
+
+②修改后添加到的暂存区，撤销修改会回到暂存区状态。
+
+`git reset HEAD <file>`
+
+把暂存区修改撤销掉，重新放回工作区。
+
+`git rm <file>`
+
+从版本库删除文件。
 
