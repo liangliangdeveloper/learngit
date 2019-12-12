@@ -58,3 +58,6 @@
 
 从版本库删除文件。
 
+`ssh-keygen -t rsa -C "youremail@example.com"`
+
+创建ssh Key。在用户目录里面可以看到`.ssh`目录。有`id_rsa`和`id_rsa.pub`两个文件。后者是公钥，可以告诉任何人。
